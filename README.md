@@ -28,8 +28,7 @@ python analyze_dockerfile.py
 ### 2. Docker로 실행
 
 ```
-docker run -v /path/to/your/local/Dockerfile:/app/Dockerfile -it jeongju/dockerfile-checker:4.0
-분석할 Dockerfile의 경로를 입력하세요: /app/Dockerfile
+docker run -v /path/to/your/local/Dockerfile:/app/Dockerfile -it jeongju/dockerfile-checker:5.0
 ```
 `/path/to/your/local/Dockerfile`에 실제 경로를 넣어주세요.
 `/app/Dockerfile`은 수정하지 마세요!
