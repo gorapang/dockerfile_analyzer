@@ -1,6 +1,6 @@
 # Dockerfile Analyzer 🐳
 
-**Dockerfile Optimizer**는 주어진 Dockerfile을 분석하여 최적화 포인트를 찾아내고, 이를 기반으로 최적화 권장 사항을 제시하는 도구입니다. Dockerfile 내의 불필요한 명령어, 비효율적인 사용 방식, 보안 위험 요소를 감지하여 사용자가 최적화된 Dockerfile을 작성할 수 있도록 도와줍니다.
+**Dockerfile Analyzer**는 주어진 Dockerfile을 분석하여 최적화 포인트를 찾아내고, 이를 기반으로 최적화 권장 사항을 제시하는 도구입니다. Dockerfile 내의 불필요한 명령어, 비효율적인 사용 방식, 보안 위험 요소를 감지하여 사용자가 최적화된 Dockerfile을 작성할 수 있도록 도와줍니다.
 
 <br>
 
@@ -35,8 +35,9 @@ python analyze_dockerfile.py
 docker run -it jeongju/analyze-dockerfile:1.0
 ```
 
-## 프로그램 사용 결과 예시
+<br>
 
+## 프로그램 사용 결과 예시
 
 예시: 최적화가 필요한 Dockerfile
 ```
