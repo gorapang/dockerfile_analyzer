@@ -14,25 +14,29 @@
 <br>
 
 ## 사용 방법 🚀
-**Note**: analyze_dockerfile.py 파일과 Dockerfile은 같은 디렉토리에 있어야 합니다. 
-```
-.
-├── analyze_dockerfile.py
-└── Dockerfile
-```
 
 
-### Python으로 실행
+### 1. Python으로 실행
 
 ```bash
 pip install -r requirements.txt
 python analyze_dockerfile.py
 분석할 Dockerfile의 경로를 입력하세요: /path/to/Dockerfile
 ```
+`/path/to/Dockerfile`에 실제 경로를 넣어주세요.
+
+### 2. Docker로 실행
+
+```
+docker run -v /path/to/your/local/Dockerfile:/app/Dockerfile -it jeongju/dockerfile-checker:4.0
+분석할 Dockerfile의 경로를 입력하세요: /app/Dockerfile
+```
+`/path/to/your/local/Dockerfile`에 실제 경로를 넣어주세요.
+`/app/Dockerfile`은 수정하지 마세요!
 
 <br>
 
-## 프로그램 사용 결과 예시
+## 프로그램 출력 예시
 
 예시: 최적화가 필요한 Dockerfile
 ```
@@ -43,6 +47,8 @@ python analyze_dockerfile.py
 ❗ 멀티 스테이지 빌드가 사용되지 않았습니다. 빌드 단계와 최종 이미지를 분리하여 최종 이미지 크기를 줄이세요.
 ❗ ENV에 민감한 정보(API 키, 비밀번호 등)가 포함되었을 수도 있습니다. 환경 변수나 .env 파일을 통해 민감한 정보를 관리하세요.
 ```
+
+<br>
 
 예시: 최적화된 Dockerfile
 ```
