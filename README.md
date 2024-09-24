@@ -18,7 +18,7 @@
 
 ### 1. Python으로 실행
 
-실행환경: 
+**실행환경**: 
 - 🐍 Python 3.12.4
 
 ```bash
@@ -30,7 +30,7 @@ python analyze_dockerfile.py
 
 ### 2. Docker로 실행
 
-실행환경: 
+**실행환경**: 
 - 🐧 Ubuntu 22.04
 - 🐋 Docker version 27.3.1, build ce12230
 
