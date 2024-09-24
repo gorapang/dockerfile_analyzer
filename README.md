@@ -18,6 +18,9 @@
 
 ### 1. Python으로 실행
 
+실행환경: 
+- 🐍 Python 3.12.4
+
 ```bash
 pip install -r requirements.txt
 python analyze_dockerfile.py
@@ -27,10 +30,15 @@ python analyze_dockerfile.py
 
 ### 2. Docker로 실행
 
+실행환경: 
+- 🐧 Ubuntu 22.04
+- 🐋 Docker version 27.3.1, build ce12230
+
 ```
 docker run -v /path/to/your/local/Dockerfile:/app/Dockerfile -it jeongju/dockerfile-checker:5.0
 ```
 `/path/to/your/local/Dockerfile`에 실제 경로를 넣어주세요.
+
 `/app/Dockerfile`은 수정하지 마세요!
 
 <br>
