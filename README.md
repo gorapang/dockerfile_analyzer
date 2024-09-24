@@ -22,17 +22,11 @@
 ```
 
 
-### 1. Python으로 실행
+### Python으로 실행
 
 ```bash
 pip install -r requirements.txt
 python analyze_dockerfile.py
-```
-
-
-### 2. Docker로 실행
-```bash
-docker run -it jeongju/analyze-dockerfile:1.0
 ```
 
 <br>
