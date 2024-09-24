@@ -27,6 +27,7 @@
 ```bash
 pip install -r requirements.txt
 python analyze_dockerfile.py
+분석할 Dockerfile의 경로를 입력하세요: /path/to/Dockerfile
 ```
 
 <br>
