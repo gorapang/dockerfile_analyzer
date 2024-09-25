@@ -1,0 +1,19 @@
+# 바람직하지 않은 Dockerfile
+
+# 1. 매우 큰 기본 이미지를 사용 (최소한의 베이스 이미지가 아님)
+FROM ubuntu:20.04
+
+# 2. 여러 개의 RUN 명령을 사용하여 레이어가 많아짐
+RUN apt-get update
+RUN apt-get install -y curl
+RUN apt-get install -y git
+RUN apt-get install -y vim
+
+# 3. 빌드 과정에서 불필요한 파일까지 모두 복사해 컨테이너에 포함
+COPY . /usr/src/app
+
+# 4. 멀티 스테이지 빌드를 사용하지 않고, 모든 빌드 단계 파일을 최종 이미지에 포함
+RUN gcc -o myapp myapp.c
+
+# 5. 환경 변수에 민감한 정보를 포함
+ENV API_KEY=1234567890abcdef
